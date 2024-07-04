@@ -1,7 +1,5 @@
 # productisuite
-A web app that consolidates key business functions into one platform, enabling task management, date calculations, and real-time information recording to streamline workflows and boost productivity.
 
-ProductiSuite
 ProductiSuite is a web-based application aimed at optimizing employee productivity by integrating key functionalities from data aggregated across various business applications into a single access point. This application enables employees to effectively manage tasks, compute date intervals, and record essential information in real-time, thereby streamlining workflows, ensuring accuracy and enhancing overall operational efficiency.
 
 Features:
