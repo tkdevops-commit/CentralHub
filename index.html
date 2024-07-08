@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claims Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="left">
+            <div class="left-bottom">
+                <div class="australian-times">
+                    <div class="time-group">
+                        <span class="state-name">NSW</span>
+                        <span class="state-time" id="timeNSW">--:--</span>
+                    </div>
+                    <div class="time-group">
+                        <span class="state-name">VIC</span>
+                        <span class="state-time" id="timeVIC">--:--:--</span>
+                    </div>
+                    <div class="time-group">
+                        <span class="state-name">QLD</span>
+                        <span class="state-time" id="timeQLD">--:--:--</span>
+                    </div>
+                    <div class="time-group">
+                        <span class="state-name">SA</span>
+                        <span class="state-time" id="timeSA">--:--:--</span>
+                    </div>
+                    <div class="time-group">
+                        <span class="state-name">WA</span>
+                        <span class="state-time" id="timeWA">--:--:--</span>
+                    </div>
+                    <div class="time-group">
+                        <span class="state-name">TAS</span>
+                        <span class="state-time" id="timeTAS">--:--:--</span>
+                    </div>
+                    <div class="time-group">
+                        <span class="state-name">NT</span>
+                        <span class="state-time" id="timeNT">--:--:--</span>
+                    </div>
+                    <div class="time-group">
+                        <span class="state-name">ACT</span>
+                        <span class="state-time" id="timeACT">--:--:--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <button onclick="openBlank()" target="blank" class="common-button">Quick link</button>
+            <button onclick="toggleScriptBox()" class="common-button">Quick Link</button>
+            <div id="scriptBox" class="script-box" style="display: none;">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laborum, velit tenetur ipsa veniam sunt qui minima illum numquam ullam dignissimos et, dolorem excepturi eius quis deserunt consequuntur harum? Possimus sequi eum eos placeat quo, aspernatur error itaque sed? A provident enim harum sed alias quidem beatae voluptate at maiores.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veniam deleniti optio ipsa voluptate inventore porro at, tenetur voluptatum maxime odit est, nam rerum amet laboriosam. Totam maiores praesentium unde facilis veniam quo minima ipsum dolorum, placeat nam consequuntur quis nesciunt, commodi beatae aspernatur sint possimus et molestiae? Quos, quisquam!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui omnis beatae harum, minus blanditiis non numquam dicta totam sint dolor neque exercitationem rerum mollitia nihil obcaecati illo nemo quae. Accusantium debitis totam alias ab nesciunt aliquam dolor similique? Voluptatibus voluptatum beatae ea. Debitis odio, est quasi omnis eligendi ipsa pariatur.</li>
+                </ul>
+            </div>
+            <button onclick="toggleContactsBox()" class="common-button">Quick Link</button>
+                <div id="contactsBox" class="dropdown-content-co" style="display: none;">
+               <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+               </ul>
+            </div>
+            <div id="currentDateTime"></div>
+       </div>
+
+        <div class="right">
+
+            <!-- <button onclick="toggleDropdownOther()" class="dropdown-button">Payment Streams</i></button>
+            <div id="dropdownContentOther" class="dropdown-content">  
+                <a href="agePension.html">Age Pension</a>
+                <a href="families.html">Families</a>
+                <a href="parentingPayment.html">Parenting</a>
+                <a href="jobSeeker.html">Job Seeker</a>
+                <a href="youthAllowance.html">Youth Allowance</a>
+            </div> -->
+            
+            <button onclick="refreshPage()">Clear</button>
+            
+            <button onclick="saveWork()">Save</button>
+            
+            <button onclick="toggleDropdown()" class="dropdown-button"><i class="fas fa-bars"></i></button>
+            <div id="dropdownContent" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+                <a href="#">Option 4</a>
+                <a href="#">Option 5</a>
+                <a href="#">Option 6</a>
+                <a href="#">Option 7</a>
+                <a href="#">Option 8</a>
+                <a href="#">Option 9</a>
+                <a href="#">Option 10</a>
+                <a href="#">Option 11</a>
+                <a href="#">Option 12</a>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="box-content">
+                <input type="text" placeholder="Enter Customer Info..." id="ClaimID">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box-content">
+                <input type="text" placeholder="Enter Customer Info..." id="CarerName">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box-content">
+                <input type="text" placeholder="Enter Customer Info..." id="CarerCRN">
+            </div>
+        </div>
+    </div>
+    <div class="container-wrapper">
+        <div class="container" id="container1">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container1')">Criteria Markers</div>
+                <div class="content">
+                    <div class="content-scroller">
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                        <button class="toggle-scroller">Placeholder</button>
+                    </div>
+                    <button id="button-add" class="button-main" onclick="toggleStoredTextBox('textBox1')">Additional Information</button>
+                    <div id="textBox1" style="display: none;">
+                        <textarea id="CarerAdditionalInformation" rows="10" cols="50"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container2">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container2')">Client</div>
+                <div class="content">
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Client Info..." id="ID">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="Name">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="Address">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="Age">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..."id="SCCRN">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="SCName">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="Nom">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="NomPhone">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-group">
+        <div class="container" id="container3">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container3')">Customer</div>
+                <div class="content">
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CRCRN">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CRName">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CRAddress">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CRAge">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container4">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container4')">Customer</div>
+                <div class="content">
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver CRN..." id="CR2CRN">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver Name...." id="CR2Name">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver Address..." id="CR2Address">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver Age..." id="CR2Age">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container5">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container5')">Customer</div>
+                <div class="content">
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver CRN..." id="CR3CRN">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver Name...." id="CR3Name">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver Address..." id="CR3Address">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Care Receiver Age..." id="CR3Age">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container6">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container6')">Customer</div>
+                <div class="content">
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CR4CRN">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CR4Name">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CR4Address">
+                    </div>
+                    <div class="box-content">
+                        <input type="text" placeholder="Enter Customer Info..." id="CR4Age">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-group">
+        <div class="container" id="container7">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container7')">Workflow Notes</div>
+                <div class="content">
+                <div class="container">
+                    <input id="inputField" type="text" placeholder="Enter to-do-list..."><button id="addToDo">Add</button>
+                    <div class="to-dos" id="toDoContainer">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container8">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container8')">Days Between Dates</div>
+                    <div class="content">
+                        <label for="start-date">Date</label>
+                        <input type="date" id="start-date"><br><br>
+                        <label for="end-date">Date</label>
+                        <input type="date" id="end-date"><br>
+                        <button onclick="calculateDaysAndWeeks()">Calculate</button><br><br>
+                        <label for="days-input">Days</label>
+                        <input type="number" id="days-input"><br><br>
+                        <button onclick="calculateEndDate()">Calculate</button><br><br>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container" id="container9">
+            <div class="container-border">
+                <div class="label" onclick="toggle('container9')">Quick Notes</div>
+                <div class="content">
+                    <div class="container">
+                        <div>
+                            <button onclick="selectNote('This is a note')">Note 1</button>
+                            <button onclick="selectNote('Note 2: This is a predefined note.')">Note 2</button>
+                            <button onclick="selectNote('Note 3: JavaScript is awesome!')">Note 3</button>
+                            <button onclick="selectNote('Note 4: CSS flex drives me mad!')">Note 4</button>
+                            <button onclick="selectNote('Note 5: The world is not flat.')">Note 5</button>
+                            <button onclick="selectNote('Note 6: blah blah blah!')">Note 6</button>
+                        </div>
+                        <input type="text" id="textToCopy" value="" placeholder="Select a note to copy">
+                        <button onclick="copyToClipboard()">Copy</button>
+                        <p id="feedback" style="display: none;">Copied to clipboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+    Australia acknowledges the Traditional Custodians of the lands we live on. We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
