@@ -1,3 +1,7 @@
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
+![HTML](https://img.shields.io/badge/HTML-orange)
+![CSS](https://img.shields.io/badge/CSS-blue)
+
 # productisuite
 
 ProductiSuite is a small scaled personal project web-based application build aimed at optimizing employee productivity by integrating key functionalities from data aggregated across various business applications into a single access point. This application enables employees to effectively manage tasks, compute date intervals, and record essential information in real-time, thereby streamlining workflows, ensuring accuracy and enhancing overall operational efficiency. Built only in HTML, CSS and JS.
