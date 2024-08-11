@@ -292,10 +292,32 @@
         </div>
         <div class="container" id="container9">
             <div class="container-border">
-                <div class="label" onclick="toggle('container9')">Quick Notes</div>
+                <div class="label" onclick="toggle('container9')">Calendar</div>
                 <div class="content">
                     <div class="container">
-                        <div>
+
+                        <div class="calendar">
+                            <div class="header">
+                                <button id="prev">&lt;</button>
+                                <h2 id="monthYear"></h2>
+                                <button id="next">&gt;</button>
+                            </div>
+                            <div class="days">
+                                <div class="day">Sun</div>
+                                <div class="day">Mon</div>
+                                <div class="day">Tue</div>
+                                <div class="day">Wed</div>
+                                <div class="day">Thu</div>
+                                <div class="day">Fri</div>
+                                <div class="day">Sat</div>
+                            </div>
+                            <div class="dates" id="dates"></div>
+                        </div>
+
+
+
+
+                        <!--<div>
                             <button onclick="selectNote('This is a note')">Note 1</button>
                             <button onclick="selectNote('Note 2: This is a predefined note.')">Note 2</button>
                             <button onclick="selectNote('Note 3: JavaScript is awesome!')">Note 3</button>
@@ -305,7 +327,9 @@
                         </div>
                         <input type="text" id="textToCopy" value="" placeholder="Select a note to copy">
                         <button onclick="copyToClipboard()">Copy</button>
-                        <p id="feedback" style="display: none;">Copied to clipboard</p>
+                        <p id="feedback" style="display: none;">Copied to clipboard</p>-->
+
+
                     </div>
                 </div>
             </div>
