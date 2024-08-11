@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     restoreFromLocalStorage();
     updateAustralianStateTimes();
