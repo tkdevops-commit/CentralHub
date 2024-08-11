@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     restoreFromLocalStorage();
     updateAustralianStateTimes();
+    setInterval(updateAustralianStateTimes, 1000);
 });
 
 window.addEventListener('beforeunload', saveToLocalStorage);
@@ -290,12 +291,3 @@ function showFeedback(success) {
         feedback.style.display = 'none';
     }, 1000);
 }
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    restoreFromLocalStorage();
-    updateAustralianStateTimes();
-});
-
-window.addEventListener('beforeunload', saveToLocalStorage);
-
