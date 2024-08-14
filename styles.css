@@ -468,4 +468,8 @@ input[type="date"], input[type="time"] {
     cursor: pointer;
 }
 
+.wednesday {
+    background-color: #04304b; 
+    color: #fff; 
+}
 

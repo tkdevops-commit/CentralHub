@@ -312,19 +312,28 @@ function renderCalendar() {
 
     monthYearElement.textContent = `${months[currentMonth]} ${currentYear}`;
 
+    // Add empty cells for the days of the previous month
     for (let i = 0; i < firstDay; i++) {
         const emptyCell = document.createElement('div');
         datesElement.appendChild(emptyCell);
     }
 
+    // Add cells for each day in the current month
     for (let i = 1; i <= daysInMonth; i++) {
         const dateCell = document.createElement('div');
         dateCell.classList.add('date');
         dateCell.textContent = i;
 
+        // Highlight today's date
         const today = new Date();
         if (i === today.getDate() && currentMonth === today.getMonth() && currentYear === today.getFullYear()) {
             dateCell.classList.add('today');
+        }
+
+        // Highlight Wednesdays
+        const dayOfWeek = new Date(currentYear, currentMonth, i).getDay();
+        if (dayOfWeek === 3) { // 3 corresponds to Wednesday
+            dateCell.classList.add('wednesday');
         }
 
         datesElement.appendChild(dateCell);
