@@ -322,20 +322,12 @@ function renderCalendar() {
         dateCell.classList.add('date');
         dateCell.textContent = i;
 
-<<<<<<< HEAD
-       
-=======
-
->>>>>>> 42329b2 (refactor)
         const today = new Date();
         if (i === today.getDate() && currentMonth === today.getMonth() && currentYear === today.getFullYear()) {
             dateCell.classList.add('today');
         }
 
-<<<<<<< HEAD
-=======
         // Highlight Wednesdays edit to reflect payday periods
->>>>>>> 42329b2 (refactor)
         const dayOfWeek = new Date(currentYear, currentMonth, i).getDay();
         if (dayOfWeek === 3) { 
             dateCell.classList.add('wednesday');
