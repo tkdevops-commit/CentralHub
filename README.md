@@ -15,7 +15,7 @@ Features
 - Workflow Streamlining: Simplify and automate workflows for improved efficiency.
 - Calendar binding: Mark calendar days for payment scheduling or other features. 
 
-This project is freely available for sharing and use. I encourage individuals and organizations to leverage ProductiSuite to enhance their productivity and efficiency. Feel free to use, modify and distribute the code as needed.
+This project is freely available for sharing and use. Feel free to use, modify and distribute the code as needed.
 
 <br>
 
