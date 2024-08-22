@@ -18,4 +18,4 @@ This project is freely available for sharing and use. I encourage individuals an
 
 <img width="1440" alt="Screenshot 2024-08-23 at 7 04 00 AM" src="https://github.com/user-attachments/assets/bdf6adfe-378e-4e3f-99a1-24086afb60f8">
 
-*Unfinished project
+*Unfinished project*
