@@ -12,7 +12,7 @@ Features
 - Task Management: Efficiently manage and prioritize tasks.
 - Date Interval Computation: Calculate date intervals seamlessly.
 - Real-Time Information Recording: Record and access essential information in real-time.
-- Workflow Streamlining: Simplify and automate workflows for improved efficiency.
+- Workflow Streamlining: Simplify and automate workflows for improved efficiency (pipeline).
 - Calendar binding: Mark calendar days for payment scheduling or other features. 
 
 This project is freely available for sharing and use. Feel free to use, modify and distribute the source code as needed.
