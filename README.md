@@ -4,7 +4,7 @@
 
 # CentralHub
 
-CentralHub is a small personal web-based application build aimed at optimizing employee productivity and limiting employee access to sensitive customer information by integrating key functionalities from data aggregated across various business applications into a single access point. This application enables employees to effectively manage tasks, compute date intervals, record essential information in real-time and provide interval payment scheduling thereby streamlining workflows, ensuring accuracy and enhancing overall operational efficiency. 
+CentralHub is a small personal web-based application build aimed at optimizing employee productivity and limiting employee access to sensitive customer information by integrating specific key functionalities from data aggregated across various business applications into a single access point. This application enables employees to effectively manage tasks, compute date intervals, record essential information in real-time and provide interval payment scheduling thereby streamlining workflows, ensuring accuracy and enhancing overall operational efficiency. 
 
 Built only using HTML, CSS and JS.
 
