@@ -11,7 +11,7 @@ Built only using HTML, CSS and JS.
 Features
 - Task Management: Efficiently manage and prioritize tasks.
 - Date Interval Computation: Calculate date intervals seamlessly.
-- Real-Time Information Recording: Record and access essential information in real-time.
+- Real-Time Information Recording: Record and access essential information in real-time (pipelline).
 - Workflow Streamlining: Simplify and automate workflows for improved efficiency (pipeline).
 - Calendar binding: Mark calendar days for payment scheduling or other features. 
 
