@@ -13,7 +13,11 @@ Features
 - Date Interval Computation: Calculate date intervals seamlessly.
 - Real-Time Information Recording: Record and access essential information in real-time (pipelline).
 - Workflow Streamlining: Simplify and automate workflows for improved efficiency (pipeline).
-- Calendar binding: Mark calendar days for payment scheduling or other features. 
+- Calendar binding: Mark calendar days for payment scheduling or other features.
+- API Gateway: manage and secure API requests. Handle routing, authentication and middleware tasks. (pipeline)
+- Restful API: HTTP requests to fetch customer information. (pipeline)
+
+- 
 
 This project is freely available for sharing and use. Feel free to use, modify and distribute the source code as needed.
 
