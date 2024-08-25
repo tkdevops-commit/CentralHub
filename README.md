@@ -17,7 +17,6 @@ Features
 - API Gateway: manage and secure API requests. Handle routing, authentication and middleware tasks. (pipeline)
 - Restful API: HTTP requests to fetch customer information. (pipeline)
 
-- 
 
 This project is freely available for sharing and use. Feel free to use, modify and distribute the source code as needed.
 
