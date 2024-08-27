@@ -356,3 +356,21 @@ nextButton.addEventListener('click', () => {
 });
 
 renderCalendar();
+
+function toggleStoredTextBox(id) {
+    var textBox = document.getElementById(id);
+    if (textBox.style.display === "none") {
+        textBox.style.display = "block";
+    } else {
+        textBox.style.display = "none";
+    }
+}
+
+function copyText() {
+    var textArea = document.getElementById("CarerAdditionalInformation");
+    textArea.select();
+    textArea.setSelectionRange(0, 99999); // For mobile devices
+    document.execCommand("copy");
+    alert("Text copied to clipboard!");
+}
+
