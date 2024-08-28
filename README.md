@@ -7,7 +7,7 @@
 CentralHub is a small personal web-based application build aimed at optimizing employee productivity, displaying workflow criteria and limiting employee access to 'need to know' sensitive customer information by integrating specific key functionalities from data aggregated across various business applications into a single access point. This application enables employees to effectively manage tasks, compute date intervals, record essential information in real-time and provide interval payment scheduling thereby streamlining workflows, ensuring accuracy and enhancing overall operational efficiency. 
 
 
-Incorporating STAR Method into application pre-defined
+Incorporating predefined template (STAR Method):
 Using the STAR (Situation, Task, Action, Result) method in internal applications helps employees organize their thoughts clearly and consistently. It ensures important details are captured in a structured way, making it easier to track progress, assess performance, and improve decision-making. Overall, it boosts productivity and encourages effective communication and collaboration.
 
 Built only using HTML, CSS and JS.
