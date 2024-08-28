@@ -10,8 +10,6 @@ CentralHub is a small personal web-based application build aimed at optimizing e
 Incorporating predefined template (STAR Method) into text-area:
 STAR (Situation, Task, Action, Result) method helps employees organize their thoughts clearly and consistently. It ensures important details are captured in a structured way, making it easier to track progress, assess performance, and improve decision-making. Pedefined template can be modified to suit business needs.  
 
-Built only using HTML, CSS and JS.
-
 Features
 - Task Management: Efficiently manage and prioritize tasks.
 - Date Interval Computation: Calculate date intervals seamlessly.
