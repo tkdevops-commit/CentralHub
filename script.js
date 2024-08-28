@@ -366,3 +366,37 @@ function copyText() {
     alert("Text copied to clipboard!");
 }
 
+        function toggleStoredTextBox(id) {
+            var textBox = document.getElementById(id);
+            if (textBox.style.display === 'none') {
+                textBox.style.display = 'block';
+                setPredefinedText(); // Set predefined text when the textbox is shown
+            } else {
+                textBox.style.display = 'none';
+            }
+        }
+
+        function setPredefinedText() {
+            var textarea = document.getElementById('CarerAdditionalInformation');
+            textarea.value = `--- STAR Method Note Template ---
+
+Situation: 
+Describe the situation or context of your experience. What was the scenario?
+
+Task: 
+What was the task or challenge that you needed to address? What were you responsible for?
+
+Action: 
+Detail the specific actions you took to address the task. What did you do?
+
+Result: 
+What was the outcome of your actions? What did you accomplish or learn?
+-----------------------`;
+        }
+
+        function copyText() {
+            var textarea = document.getElementById('CarerAdditionalInformation');
+            textarea.select();
+            document.execCommand('copy');
+        }
+    </script>
