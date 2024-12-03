@@ -20,7 +20,7 @@ Features
 - Restful API: HTTP requests to fetch customer information. (pipeline)
 
 
-This project is freely available to use, modify and distribute the source code as needed.
+This project, the source code and content is freely available to use, modify and distribute as needed.
 
 <br>
 
